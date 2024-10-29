@@ -1,0 +1,11 @@
+Extent report is a type of report we can generate for our test cases
+for this we need to add a extent report dependency if we use maven or download and add the jar file if not using maven
+create test cases and run it using testng and refresh the project we will be getting a report file in test output
+
+ExtentReports extentreport;
+ExtentHtmlReporter reporter;
+ExtentTest testcase;
+
+extentreport=new ExtentReports();
+reporter=new ExtentHtmlReporter("Extentreport.html");
+extentreport.attachReporter(reporter);
